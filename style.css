@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(https://i.ibb.co/PYdgfbP/weather-effects-with-dessert-1.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: auto;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+    
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: auto;
+    float: right;
+    height: 70px;
+    margin-right: 40px;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+.navbar h1{
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    position: absolute;
+    color: #ff7200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menumobile{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.menumobile.open{
+    height: 240px;
+}
+
+.menumobile ul{
+    display: flex;
+    flex-direction: column;
+    float: right;
+
+}
+
+.menumobile li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle{
+    display: none;
+}
+
+
+/*about us section css code */
+.about_head{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.about_head h1{
+
+    margin-bottom: 25px;
+    position: relative;
+    
+}
+
+.about_head h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #ff7200;
+}
+
+.about_head p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    
+    
+}
+
+
+.about{
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.about-image{
+    
+   flex: 0.5;
+   margin-right: 40px;
+    overflow: hidden;
+}
+
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-image img:hover{
+    transform: scale(1.2);
+}
+
+
+
+.about-content{
+    flex: 1;
+
+
+}
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    color: #fff;
+    background-color: #ff7200;
+
+}
+
+
+/* video section two */
+.container2{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    background-color: #ff7200;
+    
+}
+
+
+.about-image video{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-content .read-more2{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    color: #ff7200;
+    background-color: #fff;
+
+}
+
+
+/* section 3 netherlands  */
+
+.container3{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    background-color: #fff;
+   
+    
+}
+
+
+
+@media(max-width:800px){
+    ul{
+        display: none;
+    }
+    .menu{
+        width: auto;
+        float: left;
+        height: 70px;
+    }
+    .navbar{
+        width: auto;
+        height: 75px;
+        margin: auto;
+    }
+    .navbar h1{
+        text-align: center;
+        justify-content: center;
+        text-transform: uppercase;
+        position: absolute;
+        position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+       
+        
+    }
+
+.toggle{
+    position: absolute;
+    display: block;
+    color: aliceblue;
+    font-size: 1.5rem;
+    top: 17px;
+    right: 10px;
+}
+.menumobile{
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top:50px;
+    width: auto;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(3px);
+   
+    overflow: hidden;
+    margin: 0;
+    z-index: 1;
+    
+    
+}
+.menumobile ul li{
+    padding: 0.2rem;
+    margin-right: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menumobile ul{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menumobile a{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    
+
+.about_head{
+    padding: 0px 20px;
+
+}
+.about_head h1{
+    font-size: 36px;
+}
+
+.about_head p{
+    font-size: 17px;
+    margin-bottom:0px ;
+}
+.container{
+    padding: 0px;
+
+}
+.about{
+    padding: 20px;
+    flex-direction: column;
+}
+.about-image{
+    margin-right: 0;
+    margin-bottom: 20px;
+    flex: 1;
+
+}
+.about-content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.about-content p{
+padding: 0px;
+font-size: 17px;
+}
+.about-content .read-more{
+    font-size: 16px;
+    
+}
+
+
+}
